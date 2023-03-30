@@ -6,16 +6,10 @@ console.log(texto.toLowerCase());
 
 console.log(tam);
 
-const cadenaNormal =
-  "El 90% de nuestras decisiones las toma nuestro subconsciente";
+const caracteres_texto = texto.split(" ");
+console.log(caracteres_texto);
+console.log(`La cadena tiene ${caracteres_texto.length} caracteres`);
 
-// Convierte en mayusculas
-const cadenaMayusculas = cadenaNormal.toUpperCase();
-
-// Convierte en minúsculas
-const cadenaMinusculas = cadenaNormal.toLowerCase();
-
-// Número de carácteres
-const longitud = texto.length;
-
-console.log(cadenaMayusculas, cadenaMinusculas, longitud);
+const cadena_sin_espacio = caracteres_texto.join("");
+console.log(cadena_sin_espacio);
+console.log(`La cadena mide sin espacios ${cadena_sin_espacio.length}`);
