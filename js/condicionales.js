@@ -8,7 +8,7 @@ console.log(resultado); */
 let today = new Date();
 const year_today = today.getFullYear();
 
-const dato_year = 2020;
+const dato_year = 1995;
 let edad = year_today - dato_year;
 
 console.log("######################");
@@ -19,9 +19,13 @@ let puede = edad >= 18 ? "Puede pasar" : "Tirale niño";
 console.log(`#   ${puede}      #`);
 console.log("######################");
 
-const animal = "elefante";
+const animal = "tigre";
 const sexo = "mujer";
-const hijos = 3;
-
-let padre_o_madre = sexo === "mujer" && hijos > 0 ? "madre" : "padre";
+const hijos = 0;
+let padre_o_madre = "";
+if (hijos > 1) {
+  padre_o_madre = sexo === "mujer" ? "madre" : "padre";
+} else if (hijos === 0) {
+  padre_o_madre = sexo === "varon" ? "padre" : "madre";
+}
 console.log(`La ${padre_o_madre} ${animal} tiene ${hijos} hijos`);
